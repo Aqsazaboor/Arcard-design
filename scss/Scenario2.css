@@ -1,0 +1,5 @@
+.moonremort img {
+  background: url(.png);
+  mix-blend-mode: luminosity;
+  border-radius: 6px;
+}

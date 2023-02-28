@@ -1,0 +1,126 @@
+.moonremort {
+  img {
+    background: url(.png);
+    mix-blend-mode: luminosity;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+  }
+}
+.card-remort {
+  max-width: 300px;
+  width: 100%;
+  height: 410px;
+  left: 70px;
+
+  position: relative;
+  border: 5px;
+  background-clip: padding-box;
+  background: #001c29;
+  border: 4px solid transparent;
+  border-radius: 10px;
+  @media screen and (max-width: 786px) and (min-width: 375px) {
+    left: 0px;
+  }
+
+  @media screen and (max-width: 1400px) and (min-width: 375px) {
+    margin-top: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -8px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #ffffff 8.06%, #ffb600 100%);
+  }
+
+  &::after {
+    content: "";
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 85px;
+
+    background: #ffb600;
+    clip-path: polygon(20% 0%, 80% 0%, 70% 12%, 28% 11%);
+  }
+}
+.rare-item {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #092330;
+  padding: 0px 142px;
+  max-width: 1920px;
+  max-height: 120px;
+  height: 100%;
+  @media screen and (max-width: 1024px) and (min-width: 375px) {
+    flex-wrap: wrap;
+    max-height: 201px;
+    padding: 0px 20px;
+  }
+
+  .rare-first {
+    gap: 12px;
+    display: flex;
+    width: 100%;
+  }
+  .rare-heading {
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #00ec93;
+    }
+  }
+  .rare-star {
+    display: flex;
+    align-items: end;
+    padding: 12px;
+    img {
+      background: #00ec93;
+      border-radius: 43px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .rare-second {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .rare-btn {
+    padding: 12px;
+    background: linear-gradient(90deg, #fb0131 0%, #8b1ec8 100%);
+    border-radius: 6px;
+    width: 240px;
+    height: 56px;
+  }
+}
+.cards-image {
+  @media screen and (max-width: 786px) and (min-width: 375px) {
+    padding: 20px;
+  }
+}
+.hero-wrappe {
+  @media screen and (max-width: 786px) and (min-width: 375px) {
+    padding: 20px 20px;
+  }
+}
+.item {
+  margin-top: 140px;
+}
